@@ -19,9 +19,9 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{
-					headerShown: false,
-          animation : 'none'
-				}} >
+        headerShown: false,
+        animation: 'none'
+      }} >
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Templates" component={Templates} />
         <Stack.Screen name="EditScreen" component={EditScreen} />

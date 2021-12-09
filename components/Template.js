@@ -39,6 +39,12 @@ const Template = (props) => {
           right: 0,
           bottom: 0,
         }}>
+          {props.userImage != null &&
+
+            <Draggable x={110} y={180}>
+              <Image source={{ uri: props.userImage.uri }} style={{ height: 100, width: 100 }} />
+            </Draggable>
+          }
           <Draggable x={30} y={70}>
             <Text style={{
               fontSize: 25,
